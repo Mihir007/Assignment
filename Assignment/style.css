@@ -4,8 +4,7 @@
 
 
 body{
-    background: url('Imgs/bkg5.jpg') no-repeat center center fixed; 
-  /*  background-color: #eee;   */
+    background-color:#c9af98;  
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;  
@@ -19,7 +18,8 @@ h1  {
  text-align: center;
  font-size: 3em;
  font-style: none;
- text-shadow: 0.010em 0.125em 0.188em #009;						 
+ text-shadow: 0.010em 0.125em 0.188em #009;
+ font-family:serif;
 }
 
 
@@ -76,13 +76,18 @@ p4  {
 
 /*------Navigation bar-------------------------*/
 
+#image{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
   #nav-main a:hover{
-	  text-shadow: 0.063em 0.125em 0.188em #009;
+	  text-shadow: 0.063em 0.125em 0.188em #555;
   }
 
 header {
 	overflow: auto;
-    background: #FF8C00;
+    background: white;
     position: fixed;
     width: 100%;
 }
@@ -91,7 +96,7 @@ header {
 #nav-mobile {
 	line-height: 1.75em;
 	text-align: center;
-	background: #FF8C00; 
+	/*background: #FF8C00; */
 	font-weight: bold;
 }
 
@@ -100,7 +105,7 @@ header {
 	text-align: center;
 	line-height: 1.75em;
 	text-decoration: none;
-	color: #FFFAF0;
+	color: #845007;
 	font-weight: bold;
 	height: 0;
 	opacity: 0;
@@ -120,12 +125,12 @@ nav a {
 	display: inline-block;
 	color: #555;
 }
-#nav-main a:hover {
+/*#nav-main a:hover {
 	background: #FF8C00;
-}
+}*/
 
 /*BREAKPOINT: larger than mobile*/
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 580px) {  
 	#nav-main {
 		text-align: right;
 	}
@@ -139,11 +144,11 @@ nav a {
 		visibility: visible;
 		padding: 0 1em;
 		opacity: 1;
-		border-right: 3px solid #fff;
+		border-right: 3px solid #845007;
 	}
-	#nav-main a:hover {
+	/*#nav-main a:hover {
 		background: #FF8C00;
-	}
+	}*/
 	#nav-main a:last-child {
 		border-right: none;
 	}
