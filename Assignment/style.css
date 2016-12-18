@@ -19,7 +19,7 @@ h1  {
  font-size: 3em;
  font-style: none;
  text-shadow: 0.010em 0.125em 0.188em #009;
- font-family:serif;
+ font-family: cursive;
 }
 
 
@@ -43,9 +43,6 @@ h3{
  text-shadow: 0.010em 0.125em 0.188em #009;
 }
 
-p{
-    color: white;
-}
 
 p4  {
  color: #FFF; 
@@ -55,15 +52,6 @@ p4  {
  font-size: 7vw;
  font-style: none;
  text-shadow: 0.010em 0.125em 0.188em #F4071F;
-}
-
-
-#p1wrapper {
-     text-align: center; 
-     background-color: white 0.2;
-     width: 100%;
-     font-size:2vw;
-     box-shadow: 0.063em 0.125em 0.188em  #F4071F;
 }
 
 .container {
@@ -78,7 +66,7 @@ p4  {
 
 #image{
     height: 100px;
-    width: 100px;
+    width: 130px;
     margin: auto;
 }
   #nav-main a:hover{
@@ -119,8 +107,6 @@ header {
 	visibility: visible;
 }
 
-/*just decoration*/
-
 nav a {
 	display: inline-block;
 	color: #555;
@@ -129,7 +115,7 @@ nav a {
 	background: #FF8C00;
 }*/
 
-/*BREAKPOINT: larger than mobile*/
+/* larger than mobile*/
 @media screen and (min-width: 580px) {  
 	#nav-main {
 		text-align: right;
@@ -154,29 +140,14 @@ nav a {
 	}
 }
 
-/*-------------------  Main Title image ---------------------- */
+/*-------------------  Main ---------------------- */
 
-#title {
-    background: url('Imgs/bkg3.jpg') no-repeat center; 
-    background-size:cover;
-    
-}
 
-#title_text{
+#name{
     text-align: center;
-    padding-top: 10em;
+    padding-top: 3em;
 }
 
-/*------Uni, Society and Natcom logo-------------------------*/
-
-.DMUHS{
-    float: left;
-	background:url(Imgs/Dmuhslogo2.png) no-repeat;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-top: 2em;
-}
 
 /* Screens smaller than mobile */
 @media screen and (max-width: 580px) {
