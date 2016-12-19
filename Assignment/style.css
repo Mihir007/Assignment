@@ -29,6 +29,22 @@ h2  {
  padding-top:0em;
 }
 
+h3{
+ color: #FFF;
+ font-size: 2vw;
+ font-family: 'Arial';
+ text-align:center;
+ margin-right: 18%;
+}
+
+p {
+ color: #FFF;
+ font-size: 1.5vw;
+ font-family: 'Calibri';
+ text-align:center;
+ padding-top:0em;
+}
+
 .container {
   max-width: 1020px;
   margin: 0 auto;
@@ -147,18 +163,48 @@ nav a {
 
 /* Screens smaller than mobile */
 @media screen and (max-width: 580px) {
-    .DMUHS{
-	background:url(Imgs/Dmuhslogo2.png) no-repeat center;
-    width: 120px;
-    height: 120px;
-    margin-top: 2em;
-    margin-left: 40%;
-    border-radius: 50%;    
+    .img{
+    width: 200px;
+    height: auto;
+    border-radius: 20%;    
   }
 }
 
+/*---------- word animation-----------*/
 
 
+.list{
+	display: inline;
+	text-indent: 10px;
+}
+.list span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+    animation: list 18s linear infinite;
+}
+.list span:nth-child(2) { 
+	animation-delay: 3s; 
+}
+.list span:nth-child(3) { 
+	animation-delay: 6s; 
+}
+.list span:nth-child(4) { 
+	animation-delay: 9s; 
+}
+.list span:nth-child(5) { 
+	animation-delay: 12s; 
+}
+
+@-webkit-keyframes list{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
 
 
 /*---------------------------  Footer -------------------------*/
