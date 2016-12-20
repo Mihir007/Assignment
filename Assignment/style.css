@@ -23,7 +23,7 @@ h1  {
 
 h2  {
  color: #FFF;
- font-size: 2vw;
+ font-size: 2em;
  font-family: 'Arial';
  text-align:center;
  padding-top:0em;
@@ -31,15 +31,23 @@ h2  {
 
 h3{
  color: #FFF;
- font-size: 2vw;
+ font-size: 1.5em;
  font-family: 'Arial';
  text-align:center;
  margin-right: 18%;
 }
 
+h5{
+ color: #3a4660;
+ font-size: 2em;
+ font-family: 'Arial';
+ text-align:center;
+ padding-top:0em; 
+}
+
 p {
  color: #FFF;
- font-size: 1.5vw;
+ font-size: 1em;
  font-family: 'Calibri';
  text-align:center;
  padding-top:0em;
@@ -335,6 +343,97 @@ section {
   transform: translate3d(0,0,0);
 }
 
+/*--------   For Popups  -------------- */
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay2:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: orange;
+}
+
+.popup .content {
+  text-align:center;    
+  max-height: 30%;
+  overflow: auto; 
+  color: black;
+}
+@media screen and (max-width: 580px) {
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 65%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+
+}
+
+/*------- for the polaroid photo gallery-----*/
+figure, figcaption{ 
+  display:block;
+  font-family: 'Calibri';
+}
+#polaroid{
+  padding:20px 10px;
+  width:100%;
+  overflow:hidden;
+}
+#polaroid figure{
+  float:left; 
+  position:relative; 
+  width:200px;
+  margin:10px 20px;
+  padding: 6px 8px 10px 8px; 
+  background: #eee6d8; 
+  -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+  -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+  box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+}
+
+@media screen and (max-width: 580px) {
+  #polaroid{
+    padding:20px 10px;
+    width:90%;
+    overflow:hidden;
+  }
+}
 /*---------------------------  Footer -------------------------*/
 
 
@@ -425,17 +524,11 @@ section {
 .social-button.instagram .fa {
   color: #DC4A38;
 }
-.social-button.dribbble:before {
-  background-color: #F26798;
+.social-button.youtube-play:before {
+  background-color: #FF0000;
 }
-.social-button.dribbble .fa {
-  color: #F26798;
-}
-.social-button.skype:before {
-  background-color: #00AFF0;
-}
-.social-button.skype .fa {
-  color: #00AFF0;
+.social-button.youtube-play .fa {
+  color: #FF0000;
 }
 .social-button:focus:before, .social-button:hover:before {
   top: -10%;
