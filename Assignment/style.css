@@ -82,7 +82,6 @@ header {
 #nav-mobile {
 	line-height: 1.75em;
 	text-align: center;
-	/*background: #FF8C00; */
 	font-weight: bold;
 }
 
@@ -144,14 +143,6 @@ nav a {
     padding-top: 1em;
     box-shadow: inset 0 0 10px #000000;
 }
-
-/*
-#text{
-    float: right;
-    width: 80%;
-    border: solid white;
-}
-*/
 .img{
     width: 200vm;
     height: auto;
@@ -168,12 +159,6 @@ nav a {
     border-radius: 50%;  
     margin-left: 30%;
   }
-  /*  #text{
-    background: #3a4660;
-    width: 100%;
-    color: white;
-    padding-top: 6em;
-    }  */
 }
 
 /*---------- word animation-----------*/
@@ -219,6 +204,7 @@ section {
   box-sizing: border-box;
   font-family: 'Calibri';
   font-size: 1em;
+  text-align: left;
 }
 
 @media screen and (min-width: 580px) {
@@ -233,7 +219,7 @@ section {
 }
 
 
-/*-----------Gallery------------------*/
+/*-----------Gallery---------------------------------*/
 #gallery {
     background: #3a4660;
     width: 100%;
@@ -261,7 +247,7 @@ section {
  }
 }
 
-/*------- Image hover effects ------------------*/
+/*------- Image hover effects ------------*/
 .hovereffect {
   width: 100%;
   height: auto;
@@ -351,6 +337,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
+  overflow: auto; 
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   visibility: hidden;
@@ -402,7 +389,6 @@ section {
     position: relative;
     transition: all 5s ease-in-out;
   }
-
 }
 
 /*------- for the polaroid photo gallery-----*/
@@ -412,8 +398,9 @@ figure, figcaption{
 }
 #polaroid{
   padding:20px 10px;
-  width:100%;
+  width:90%;
   overflow:hidden;
+  margin: auto;
 }
 #polaroid figure{
   float:left; 
@@ -442,12 +429,6 @@ figure, figcaption{
     height: auto;
 }
 
-section {
-  margin: 4px;
-  box-sizing: border-box;
-  border: 4px;
-}
-
 @media screen and (min-width: 580px) {
   /* styles for above mobile sizes */
   section {
@@ -455,8 +436,6 @@ section {
     margin: 2%;
     padding: 0 4px .5em;
     display: inline-block;
-
-
   }
 }
 
