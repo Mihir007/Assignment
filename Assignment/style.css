@@ -421,8 +421,14 @@ figure, figcaption{
     overflow:hidden;
   }
 }
-/*---------------------------  Footer -------------------------*/
 
+/*------- Facebook API/plug in -----------------*/
+#fb{
+    
+    background-color: black;
+}
+
+/*---------------------------  Footer -------------------------*/
 
 #footer{
     width: 100%;
