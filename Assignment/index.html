@@ -164,16 +164,19 @@
 <br/>
 <!-----------Facebook link with API----------->
 <div id="fb">
-<h1>fb</h1>
-<div class="fb-page" 
-     data-href="https://www.facebook.com/mihir.pathak.37" 
-     data-tabs="timeline" 
-     data-small-header="false" 
-     data-adapt-container-width="true" 
-     data-hide-cover="false" 
-     data-show-facepile="true" 
-     data-show-posts="true"></div>    
+<h1>fb post</h1>
+
+    <div class="fb-comment-embed"></div>
     
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F1654605541490546%2Fvideos%2F1872820216335743%2F&show_text=1&width=560" width="560" height="701" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
+    
+    
+    <div
+     class="fb-like"
+     data-share="true"
+     data-width="450"
+     data-show-faces="true">
+    </div>
 </div>  
 
 <!------------------------------- Footer ---------------------------------------------->   
@@ -204,5 +207,24 @@
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+    
+    
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1401162959916494',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>    
 </html>
 
