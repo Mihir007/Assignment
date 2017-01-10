@@ -76,6 +76,7 @@ header {
     background: white;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 /*show-hide mobile-size nav nicely*/
@@ -134,7 +135,12 @@ nav a {
 }
 
 /*-------------------  Main ---------------------- */
-
+.top{
+  z-index: 2;
+  position: fixed;
+  left:100;
+    border: solid white;
+}
 
 #intro {
     background: #3a4660;
@@ -342,6 +348,7 @@ section {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+    z-index: 3
 }
 .overlay2:target {
   visibility: visible;
@@ -356,6 +363,7 @@ section {
   width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
+  z-index: 4;
 }
 
 
@@ -433,6 +441,8 @@ figure, figcaption{
 #footer{
     width: 100%;
     height: auto;
+    text-align: center;
+    border: solid white;
 }
 
 @media screen and (min-width: 580px) {
@@ -444,6 +454,9 @@ figure, figcaption{
     display: inline-block;
   }
 }
+
+
+
 
 /*--------- Social Media buttons -----------*/
 
