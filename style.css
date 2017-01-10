@@ -237,7 +237,7 @@ section {
 }
 
 #tiles {
-  width: 200px;
+  width: 490px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   display: inline-block;
@@ -309,6 +309,7 @@ section {
   background-color: transparent;
   color: #FFF;
   padding: 1em 0;
+  padding-bottom: 7em;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
