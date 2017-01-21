@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mihir Pathak</title>
-
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="java.js"></script>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+    <script src="java.js" type="text/javascript"></script>   
+    
+    <link rel="stylesheet" href="style.css" type="text/css" /> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Roboto+Slab" rel="stylesheet">
 </head>
 
     
@@ -32,18 +34,13 @@
 <br/>   
     
 <div class="container">    
- <main> 
-    <!------- Body Context----------------------->
-        <!-- for the top button java  
-<a class="top" href="#">Back to top</a> 
---->
-     
-     
+ <main>  
+    <!------- Body Context-------------------->        
      
 <br/> 
 <br/>       
 <div id="intro">
- <!-- <img class="img" src="Img/img1.jpg" alt="About me">  --->
+
     <div> 
         <h2>Who am I?</h2>
 	<h3>
@@ -97,8 +94,7 @@
 </div>
 
 <div id="gallery">
- <!--   <h2>Gallery</h2>    -->
-    
+    <h2>Gallery</h2>
      <div id="tiles">
        <div class="hovereffect">
         <img class="img-responsive" src="Img/img2.png" alt="Completed" style="width:100%">
@@ -109,7 +105,7 @@
       </div>   
      </div>
         
-     <div id="tiles">
+     <div id="tiles"> 
        <div class="hovereffect">
         <img class="img-responsive" src="Img/img3.png" alt="On-going" style="width:100%">
                 <div class="overlay">
@@ -171,35 +167,95 @@
 <h1>fb post</h1>
 
     <div class="fb-comment-embed"></div>
+    <!----- this is the code for my facebook post during the christmas ---------->
     
-    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F1654605541490546%2Fvideos%2F1872820216335743%2F&show_text=1&width=560" width="560" height="701" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNHSF.UK%2Fvideos%2F1284605884933187%2F&show_text=1&width=5490" 
+            width="490" height="445" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     
+<!----- Below is the fb plugin for my facebook page. this will not work unless you run the index file on the local server. However, the above fb video post will work without any server requirement. the below code is an extra treat! -------->    
+    <div class="fb-page" 
+     data-href="https://www.facebook.com/MP-WEB-Solutions-237271566724258/ " 
+     data-tabs="timeline" 
+     data-small-header="false" 
+     data-adapt-container-width="true" 
+     data-hide-cover="false" 
+     data-show-facepile="true" 
+     data-show-posts="true"></div>    
+<!--------------------------------------------------->
 </div>  
 
-<!------------------ Contact -------------------------------->   
-     
-     
-     
-<br/>
+<!------------------ contact form -------------------------->  
+<div id="cforms">   
+<section3>
+     <h2>Post a comment </h2>
+       <form id='form' action='' method='post'>
+        <input type="text" name="first" placeholder="Firstname">
+        <input type="text" name="last" placeholder="Lastname">
+        <input type="text" name="email" placeholder="Your Email">
+        <input type="text" name="comment" id="message" placeholder="comment"><br/>
          
+        <button id='submit' type='submit' name='Submit' value='Submit'> Submit</button>
+    
+      </form>
+</section3>
+</div>    
+
+<br/>
 </main> 
 </div>
  
-<div id="footer">    
-       <section> 
-          <h3>Find us on:</h3>
-           <div class="social-buttons">
-               <a href="" class="social-button facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-               <a href="#" class="social-button twitter"><i class="fa fa-twitter"target="_blank"></i></a>
-               <a href="#" class="social-button instagram"><i class="fa fa-instagram"target="_blank"></i></a>
-               <a href="#" class="social-button youtube-play"><i class="fa fa-youtube-play"target="_blank"></i></a>
-           </div>
-    </section> 
+ 
+<footer> 
+    <section2>
+    <ul>
+		<li>
+			<p class="home"><i class="fa fa-home"></i> Home</p>
+			<a class="content" href="#">Mihir Pathak<i>&copy; 2017</i></a>
+		</li>
+    </ul>
+   </section2>
+   <section2>
+    <ul>
+		<li>
+			<p class="services"><i class="fa fa-list"></i> Services</p>
 
-</div>      
-    
+			<ul>
+				<li><a href="#">Web Design</a></li>
+				<li><a href="#">Mobile App development</a></li>
+                <li><a href="#">Video recording &amp; edditing</a></li>
+			</ul>
+		</li>
+    </ul>
+    </section2>
+    <section2>
+    <ul>
+		<li>
+			<p class="contactus"><i class="fa fa-phone"></i> Contect us us</p>
+
+			<ul>
+				<li><a href="#">MihirP@email.co.uk</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li>0116-2212345</li>
+			</ul>
+		</li>
+    </ul>
+    </section2>
+    <section2>
+    <ul>
+		<li>
+			<p class="clients"><i class="fa fa-user"></i> Clients</p>
+
+			<ul>
+				<li><a href="#">DMU Hindu Soc</a></li>
+			</ul>
+		</li>
+	</ul>
+    </section2>
+</footer>      
     
 </body>
+    
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -208,24 +264,5 @@
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-    
-    
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1401162959916494',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>    
 </html>
 
