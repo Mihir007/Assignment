@@ -207,7 +207,17 @@ nav a {
 /*------- work------------------*/
 #work{
     border: solid white;
+    /* creating a flex layout context */
+  display: flex;
+  /* defining the flow direction to allow the items to wrap */
+  flex-flow: row wrap;
+  /* defining how is distributed the remaining space */
+  justify-content: space-around;
 }
+#title{
+    width: 100%; /* To stop the title from interfering with the flax list */
+}
+
 section {
   box-sizing: border-box;
   font-family: 'Calibri';
@@ -219,7 +229,7 @@ section {
   /* styles for above mobile sizes */
   section {
     width: 44%;
-    margin: 10px;
+    margin: 10px; 
     display: inline-block;
     font-family: 'Calibri'; 
     text-align: left;
@@ -434,13 +444,6 @@ figure, figcaption{
   }
 }
 
-/*------- Facebook API/plug in -----------------*/
-#fb{
-    
-    background-color:#c9af98; 
-}
-
-
 /*------------- Form ------------------------------*/
 #cforms{
     background: #3a4660;
@@ -507,28 +510,28 @@ section2{
     width: 250px;
     display: block;
     float: left;
-    margin-left: 4%;
-    border: white solid;
 }
 
 @media screen and (max-width: 580px) {
   footer{
-    height: 1000px;
 	color:#ccc;
 	font-size:12px;
+    overflow: visible;  
 	z-index:-3;
 	background-color:#31353a;
 	background-image:-webkit-linear-gradient(top, #31353a, #2f3337);
 	background-image:-moz-linear-gradient(top, #31353a, #2f3337);
 	background-image:linear-gradient(top, #31353a, #2f3337);
  }
-    section2{
-        margin-left: 19%;
-    }
 }
 
 
 footer{
+    display: flex;
+  /* defining the flow direction to allow the items to wrap */
+  flex-flow: row wrap;
+  /* defining how is distributed the remaining space */
+  justify-content: space-around;
     margin-top: 1em;
     height: 250px;
 	color:#ccc;
@@ -668,7 +671,7 @@ footer p.services:before{
 	background-position: 0 -129px;
 }
 
-footer p.contactus{
+footer p.contact{
 	background-color: #d75ba2;
 
 	background-image:-webkit-linear-gradient(top, #d75ba2, #c75496);
@@ -676,7 +679,7 @@ footer p.contactus{
 	background-image:linear-gradient(top, #d75ba2, #c75496);
 }
 
-footer p.contactus:before{
+footer p.contact:before{
 	background-position: 0 -89px;
 }
 
