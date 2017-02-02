@@ -10,9 +10,9 @@ body{
     -o-background-size: cover;  
     background-size: cover;
     z-index: 0;
-    position: relative;
     padding: 0;
     margin: 0;
+
 }	
 
 h1  {
@@ -148,25 +148,9 @@ nav a {
     color: white;
     margin-top: 7em;
     padding-top: 1em;
-    box-shadow: inset 0 0 10px #000000;
-}
-.img{
-    width: 200vm;
-    height: auto;
-    border: solid white;
-    border-radius: 20px;
+    box-shadow: inset 0 0 10px #000000;   
 }
 
-
-/* Screens smaller than mobile */
-@media screen and (max-width: 580px) {
-    .img{
-    width: 200vm;
-    height: 200vm;
-    border-radius: 50%;  
-    margin-left: 30%;
-  }
-}
 
 
 /*---------- word animation-----------*/
@@ -444,6 +428,23 @@ figure, figcaption{
   }
 }
 
+/*--------------- Slide show ---------------------*/
+#slideshow { 
+    margin: 50px auto; 
+    position: center; 
+    width: 100%; 
+    height: auto; 
+    padding: 0; 
+    border: 5px solid #845007;;
+    border-radius: 20%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+#slideshow > img {
+    width: 100%;
+    height: auto;
+    border-radius: 20%;
+}
+
 /*------------- Form ------------------------------*/
 #cforms{
     background: #3a4660;
@@ -451,6 +452,7 @@ figure, figcaption{
     margin-top: 7em;
     padding-top: 1em;
     box-shadow: inset 0 0 10px #000000;
+    padding-bottom: 3px;
 }
 
 #message{
@@ -483,7 +485,7 @@ input[type="text"]{
     border: 1px solid #eee;
     margin: 20px auto;
 }
-section3 {
+#section3{
   box-sizing: border-box;
   font-family: 'Calibri';
   font-size: 1em;
@@ -493,7 +495,7 @@ section3 {
 
 @media screen and (min-width: 580px) {
   /* styles for above mobile sizes */
-  section3 {
+  #section3 {
     width: 40%;
     margin: 1%;
     padding: 0 4px .5em;
@@ -501,12 +503,21 @@ section3 {
     text-align: left;
     font-family: 'calibri';
   }
+
+    #cforms{
+    background: #3a4660;
+    color: white;
+    margin-top: 7em;
+    padding-top: 1em;
+    box-shadow: inset 0 0 10px #000000;   
+}
+      
 }
 
 /*---------------------------  Footer -------------------------*/
-section2{
+#section2{
     margin-top: 3px;
-    height: 185px;
+    height: auto;
     width: 250px;
     display: block;
     float: left;
@@ -516,7 +527,7 @@ section2{
   footer{
 	color:#ccc;
 	font-size:12px;
-    overflow: visible;  
+    overflow: auto; 
 	z-index:-3;
 	background-color:#31353a;
 	background-image:-webkit-linear-gradient(top, #31353a, #2f3337);
@@ -533,7 +544,7 @@ footer{
   /* defining how is distributed the remaining space */
   justify-content: space-around;
     margin-top: 1em;
-    height: 250px;
+    height: auto;
 	color:#ccc;
 	font-size:12px;
 	z-index:-3;
@@ -541,6 +552,7 @@ footer{
 	background-image:-webkit-linear-gradient(top, #31353a, #2f3337);
 	background-image:-moz-linear-gradient(top, #31353a, #2f3337);
 	background-image:linear-gradient(top, #31353a, #2f3337);
+    
 }
 
 /* This sets a width to the outermost UL, center it and fix it to the window */
@@ -580,40 +592,6 @@ ul{
 	color:#ddd !important;
 }
 
-
-/* The company logo */
-
-footer a.content{
-	color: #e4e4e4 !important;
-	text-decoration: none !important;
-	font-size: 14px;
-	font-weight: bold;
-	position: relative;
-	text-transform: uppercase;
-	margin-left: 16px;
-	display: inline-block;
-	margin-top: 7px;
-}
-
-footer a.content i{
-	font-style: normal;
-	position: absolute;
-	width: 60px;
-	display: block;
-	left: 48px;
-	top: 18px;
-	font-size: 12px;
-	color: #999;
-}
-
-footer a.content:before{
-	display: inline-block;
-	width: 48px;
-	height: 37px;
-	vertical-align: text-top;
-}
-
-
 footer p{
 	width: 90%;
 	margin-right: 10%;
@@ -647,7 +625,7 @@ footer p:before{
 	vertical-align: text-bottom;
 }
 
-footer p.home{
+footer p.map{
 	background-color: #0096d6;
 /* buttons should light up on hover from their dark shade */
 	background-image:-webkit-linear-gradient(top, #0096d6, #008ac6);
@@ -655,7 +633,7 @@ footer p.home{
 	background-image:linear-gradient(top, #0096d6, #008ac6);
 }
 
-footer p.home:before{
+footer p.map:before{
 	background-position: 0 -110px;
 }
 
@@ -694,10 +672,18 @@ footer p.clients{
 footer p.clients:before{
 	background-position: 0 -69px;
 }
+/*---------- second footer --------------*/
 
-
-
-
+#secondfooter{
+    height: 20px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #fff; 
+    text-align: center;
+    text-decoration: none;
+    color: #845007;
+    font-weight: bold;
+}
 
 
 

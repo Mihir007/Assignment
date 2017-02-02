@@ -9,7 +9,7 @@
     <title>Mihir Pathak</title>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
-    <script src="java.js" type="text/javascript"></script>   
+      
     
     <link rel="stylesheet" href="style.css" type="text/css" /> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" type="text/css" />
@@ -140,12 +140,12 @@
      <br/>&emsp; Greeting and ushering people through temple during festivals.
      <br/>&emsp; Involved with Events managment.
       <br/>&emsp; volunterring services include (list) {<br/>
-        &emsp;&emsp; catering: serving food. <br/>
+        &emsp;&emsp; Catering: serving food. <br/>
         &emsp;&emsp; Security: guarding the entrance and car parks. <br/>
         &emsp;&emsp; Building: Fixing stages and decorating. <br/>
         &emsp;&emsp; Provide guided tour to school trips. <br/>
         &emsp;} 
-     <br/>&emsp; Making speeches to guests and devotees during festivals, in English, Gujarati and Hindi.
+     <br/>&emsp; Making speeches during festivals, in English, Gujarati and Hindi.
       <h4>}</h4>
   </section> 
 </div>
@@ -214,6 +214,22 @@
 		</div>
 	</div>
 </div> 
+    
+<!---- Below popup is for the Googe map Api for the "find us" section in the footer. -------------------->
+<div id="popup3" class="overlay2">
+	<div class="popup">
+		<h5>Find Us</h5>
+		<a class="close" href="section2">Close</a>
+		<div class="content">
+       
+            
+            
+            
+            
+            
+		</div>
+	</div>
+</div> 
 
 </div>
 
@@ -242,10 +258,17 @@
      data-show-posts="true"></div>    
 <!--------------------------------------------------->
 </div>  
-
+<br/>
+<!--------------------- Slide show ------------------------->
+ <div id="slideshow">
+       <img class="mySlides" src="" />
+       <img class="mySlides" src="" />
+       <img class="mySlides" src="" /> 
+       <img class="mySlides" src="" />
+   </div> 
 <!------------------ contact form -------------------------->  
 <div id="cforms">   
-<section3>
+<section id="section3">
      <h2>Post a comment </h2>
        <form id='form' action='' method='post'>
         <input type="text" name="first" placeholder="Firstname">
@@ -256,41 +279,41 @@
         <button id='submit' type='submit' name='Submit' value='Submit'> Submit</button>
     
       </form>
-</section3>
+</section>
 </div>    
 
 <br/>
 </main> 
 </div>
- 
 <!------------ Footer ---------------------------------> 
 <footer> 
-    <section2>
+     <section id="section2">
     <ul>
 		<li>
-			<p class="home"><i class="fa fa-home"></i> Home</p>
-			<a class="content" href="#">Mihir Pathak<i>&copy; 2017</i></a>
-		</li>
-    </ul>
-   </section2>
-   <section2>
-    <ul>
-		<li>
-			<p class="services"><i class="fa fa-list"></i> Services</p>
-
+			<p class="map"><i class="fa fa-location-arrow"></i> Find US</p>
 			<ul>
-				<li><a href="#">Web Design</a></li>
-				<li><a href="#">Mobile App development</a></li>
-                <li><a href="#">Video recording &amp; edditing</a></li>
+				<li><a href="#">Google Map</a></li>
 			</ul>
 		</li>
     </ul>
-    </section2>
-    <section2>
+    </section>
+   <section id="section2">
+    <ul>
+		<li>
+			<p class="services"><i class="fa fa-list"></i> Services</p>
+			<ul>
+				<li><a href="#">Web Design</a></li>
+				<li><a href="#">Mobile app development</a></li>
+                <li><a href="#">Video recording</a></li>
+                <li><a href="#">Video editing</a></li>
+			</ul>
+		</li>
+    </ul>
+    </section>
+    <section id="section2">
     <ul>
 		<li>
 			<p class="contact"><i class="fa fa-phone"></i> Contacts</p>
-
 			<ul>
 				<li><a href="#">MihirP@email.co.uk</a></li>
 				<li><a href="#">Twitter</a></li>
@@ -299,20 +322,22 @@
 			</ul>
 		</li>
     </ul>
-    </section2>
-    <section2>
+    </section>
+    <section id="section2">
     <ul>
 		<li>
 			<p class="clients"><i class="fa fa-user"></i> Clients</p>
-
 			<ul>
 				<li><a href="#">DMU Hindu Soc</a></li>
 			</ul>
 		</li>
 	</ul>
-    </section2>
-</footer>      
-    
+    </section>
+    <div id="secondfooter">
+         Mihir Pathak ©2017
+    </div>
+</footer>  
+<script src="java.js" type="text/javascript"></script>     
 </body>
     
 <div id="fb-root"></div>

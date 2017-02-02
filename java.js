@@ -1,32 +1,19 @@
-//https://www.youtube.com/watch?v=JTlI7yqnk4c
 
+var myIndex = 0;
+carousel();
 
-function Scroll(){
-$(document).on('scroll', function(){
-    if($(this).scrollTop() > 1){
-        $('header').addClass('sticky');
-    }else{
-        $('header').removeClass('sticky');
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
     }
-});
-    
-$(document).on('click', function(){
-    $('html,body').animate({scrollTop:0},500);
-    return false;
-});
-
-// to control the button 
-
-$(document).scroll(function(e){
-   var scrollpos = $(this).scrollTop(); //scrollpos means scroll position 
-    if(scrollpos < 100){
-        $('#top').addClass('hide');
-    }else{
-        $('#top').removeClass('hide');
-    }  
-});
-
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
 
 
 
