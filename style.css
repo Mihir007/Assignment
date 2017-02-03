@@ -672,18 +672,25 @@ footer p.clients{
 footer p.clients:before{
 	background-position: 0 -69px;
 }
+
+#map{
+    height: 500px;
+    width: 300%;
+}
 /*---------- second footer --------------*/
 
 #secondfooter{
     height: 20px;
     width: 100%;
     margin-top: 5px;
-    background-color: #fff; 
+    background-color: #34495E; 
     text-align: center;
     text-decoration: none;
-    color: #845007;
+    color: #F4F7F7;
     font-weight: bold;
+    padding-top: 3px;
 }
+
 
 
 

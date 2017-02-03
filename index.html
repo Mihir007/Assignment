@@ -219,14 +219,9 @@
 <div id="popup3" class="overlay2">
 	<div class="popup">
 		<h5>Find Us</h5>
-		<a class="close" href="section2">Close</a>
-		<div class="content">
-       
-            
-            
-            
-            
-            
+		<a class="close" href="#section2">Close</a>
+		<div class="content"> 
+             <div id="map"></div>
 		</div>
 	</div>
 </div> 
@@ -246,17 +241,6 @@
             width="490px" height="445px" style="border:none;overflow:hidden" 
             scrolling="no" frameborder="0" allowTransparency="true">
     </iframe>
-    
-<!----- Below is the fb plugin for my facebook page. this will not work unless you run the index file on the local server. However, the above fb video post will work without any server requirement. the below code is an extra treat! -------->    
-    <div class="fb-page" 
-     data-href="https://www.facebook.com/MP-WEB-Solutions-237271566724258/ " 
-     data-tabs="timeline" 
-     data-small-header="false" 
-     data-adapt-container-width="true" 
-     data-hide-cover="false" 
-     data-show-facepile="true" 
-     data-show-posts="true"></div>    
-<!--------------------------------------------------->
 </div>  
 <br/>
 <!--------------------- Slide show ------------------------->
@@ -292,7 +276,7 @@
 		<li>
 			<p class="map"><i class="fa fa-location-arrow"></i> Find US</p>
 			<ul>
-				<li><a href="#">Google Map</a></li>
+				<li><a href="#popup3">Google Map</a></li>
 			</ul>
 		</li>
     </ul>
@@ -348,5 +332,10 @@
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+    
+<!---- Script for Google Map API------------>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLn6UeGYxubsALQ34Kyd_KrGpwq_ZRXQ0&callback=initMap">
+</script>  
 </html>
 

@@ -1,4 +1,4 @@
-
+/*-----Below is the script for the image slider -----*/
 var myIndex = 0;
 carousel();
 
@@ -15,10 +15,19 @@ function carousel() {
 }
 
 
+/*--------- below is the script for Google Map API----*/
 
-
-
-
+function initMap() {
+        var uluru = {lat: 52.62973, lng: -1.13897};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+    }
 
 
 
