@@ -15,7 +15,7 @@ function carousel() {
 }
 
 /*--------------- hash change control------------------------*/
-/* file:///Users/Mihir/Documents/Github/index.html */
+/*https://github.com/twbs/bootstrap/issues/1768*/
   var shiftWindow = function() { scrollBy(0, -180) };
     window.addEventListener("hashchange", shiftWindow);
     function load() { if (window.location.hash) shiftWindow(); }

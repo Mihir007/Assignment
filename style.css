@@ -1,8 +1,10 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document 
+   Author: Mihir Pathak
+*/
 
 
-
+/* setting the stle for the body of the page */
 body{
     background-color:#c9af98;  
     -webkit-background-size: cover;
@@ -12,9 +14,9 @@ body{
     z-index: 0;
     padding: 0;
     margin: 0;
-
 }	
 
+/* Style for the Main heading */
 h1  {
  color: #3a4660; 
  text-align: center;
@@ -24,7 +26,7 @@ h1  {
  margin: auto;
 }
 
-
+/*Style for the secondary heading */
 h2  {
  color: #FFF;
  font-size: 2em;
@@ -33,6 +35,7 @@ h2  {
  padding-top:0em;
 }
 
+/*Style for the third heading*/
 h3{
  color: #FFF;
  font-size: 1.5em;
@@ -49,6 +52,7 @@ h5{
  padding-top:0em; 
 }
 
+/*Style for the paragraph texts */
 p {
  color: #FFF;
  font-size: 1em;
@@ -57,6 +61,7 @@ p {
  padding-top:0em;
 }
 
+/*Style for the container which containd the informtion */
 .container {
   max-width: 1020px;
   margin: 0 auto;
@@ -64,20 +69,20 @@ p {
   z-index: 1;
 }
 
-
-
-
 /*------Navigation bar-------------------*/
-
+/* Style for my logo */
 #image{
     height: 100px;
     width: 130px;
     margin: auto;
 }
+
+/* Style for the hover effect for nav icons */
   #nav-main a:hover{
 	  text-shadow: 0.063em 0.125em 0.188em #555;
   }
 
+/* Style for the main header */
 header {
 	overflow: auto;
     background: white;
@@ -86,18 +91,18 @@ header {
     z-index: 3;
 }
 
-/*show-hide mobile-size nav nicely*/
+/*show/hide mobile size navbar*/
 #nav-mobile {
 	line-height: 1.75em;
 	text-align: center;
 	font-weight: bold;
 }
 
+/*Style for the navigaton bar content*/
 #nav-main a {
 	display: block;
 	text-align: center;
 	line-height: 1.75em;
-	text-decoration: none;
 	color: #845007;
 	font-weight: bold;
 	height: 0;
@@ -105,18 +110,21 @@ header {
 	visibility: hidden;
 	transition: height 0.4s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
 }
+
+/*Nav bar hover effects*/
 #nav-main:hover a {
 	height: 1.75em;
 	opacity: 1;
 	visibility: visible;
 }
 
+/*Style for the layout of content in nav bar */
 nav a {
 	display: inline-block;
 	color: #555;
 }
 
-/* screens larger than mobile*/
+/* Style for screens larger than mobile*/
 @media screen and (min-width: 580px) {  
 	#nav-main {
 		text-align: right;
@@ -140,6 +148,7 @@ nav a {
 
 /*-------------------  Main ---------------------- */
 
+/*Style for the introduction div. Set's the back ground colour and the size of the div with reverse box shadow effect. */
 #intro {
     background: #3a4660;
     color: white;
@@ -150,19 +159,24 @@ nav a {
 }
 
 
-
 /*---------- word animation-----------*/
+/*Settings for the word scroll animation in the intro section.*/
 
+/*style for the list of words in the animation */
 .list{
 	display: inline;
 	text-indent: 10px;
 }
+
+/*Style for the span element containing the words */
 .list span{
-	position: absolute;
-	opacity: 0;
+	position: absolute; /*absolute positioning*/
+	opacity: 0; /*hides the rest of the list*/
 	overflow: hidden;
-    animation: list 18s linear infinite;
+    animation: list 18s linear infinite; /*keeps the animation going forever, with linear transition effect */
 }
+
+/*settings for the lists' time-delay*/
 .list span:nth-child(2) { 
 	animation-delay: 3s; 
 }
@@ -176,6 +190,7 @@ nav a {
 	animation-delay: 12s; 
 }
 
+/*Animation for getting the words defusing in and out horizontally with fading effect*/
 @-webkit-keyframes list{
 	0% { opacity: 0; }
 	5% { opacity: 0; -webkit-transform: translateY(-50px); }
@@ -187,20 +202,23 @@ nav a {
 }
 
 /*------- work------------------*/
+/*Style for the Work experience section.  */
 #work{
     margin-top: 5px;
     border: solid white;
-    /* creating a flex layout context */
+/* creating a flex layout context to nicely order each section */
   display: flex;
   /* defining the flow direction to allow the items to wrap */
   flex-flow: row wrap;
-  /* defining how is distributed the remaining space */
+  /* defining how it is distributing the remaining space */
   justify-content: space-around;
 }
+
 #title{
-    width: 100%; /* To stop the title from interfering with the flax list */
+    width: 100%; /* Had to put a div to store the heading to stop the heading from interfering with the flax list */
 }
 
+/*Style for mobile size section. Each section holds a different work experience */
 section {
   box-sizing: border-box;
   font-family: 'Calibri';
@@ -222,6 +240,8 @@ section {
 
 
 /*-----------Gallery---------------------------------*/
+
+/*Style for the Gallery div */
 #gallery {
     background: #3a4660;
     width: 100%;
@@ -232,6 +252,7 @@ section {
     box-shadow: inset 0 0 10px #000000;
 }
 
+/*Style for the two tile boxes which holds the two images */
 #tiles {
   width: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -240,6 +261,7 @@ section {
   margin-right: 10px;    
 }
 
+/*Style for mobile screen sizes and below */
 @media screen and (max-width: 580px) {
  #tiles {
    width: 200px;
@@ -250,6 +272,8 @@ section {
 }
 
 /*------- Image hover effects ------------*/
+
+/*These styles are for the hover effect of the image tiles.*/
 .hovereffect {
   width: 100%;
   height: auto;
@@ -259,6 +283,7 @@ section {
   text-align: center;
   cursor: default;
 }
+
 
 .hovereffect .overlay {
   position: absolute;
@@ -292,7 +317,6 @@ section {
 }
 
 .hovereffect:hover img {
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
   filter: brightness(0.6);
   -webkit-filter: brightness(0.6);
 }
@@ -385,7 +409,7 @@ section {
   color: black;
 }
 
-/* to get the image in a straight block on smaller screens */
+/* to get the image in a straight block on mobile screens */
 @media screen and (max-width: 580px) {
   .popup {
     margin: 70px auto;
@@ -433,14 +457,14 @@ figure, figcaption{
 #slideshow { 
     margin: 50px auto; 
     position: center; 
-    width: 100%; 
+    width: 90%; 
     height: auto; 
     padding: 0; 
     border: 5px solid #845007;;
     border-radius: 20%;
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
-#slideshow > img {
+#slideshow img {
     width: 100%;
     height: auto;
     border-radius: 20%;
@@ -567,8 +591,7 @@ ul{
 }
 
 /* The four columns of links */
-
- ul > li{
+ ul li{
 	width:90%;
 	float:left;
 }
@@ -579,18 +602,18 @@ ul{
 
 /* The links */
 
- ul > li ul li{
+ ul li ul li{
 	text-transform: uppercase;
 	font-weight:bold;
 	line-height:1.8;
 }
 
- ul > li ul li a{
+ ul li ul li a{
 	text-decoration: none !important;
 	color:#7d8691 !important;
 }
 
- ul > li ul li a:hover{
+ ul li ul li a:hover{
 	color:#ddd !important;
 }
 
@@ -615,7 +638,7 @@ footer p{
 	transition: opacity 0.4s;
 }
 
- ul > li:hover p{
+ ul li:hover p{
 	opacity:1;
 }
 
@@ -628,11 +651,8 @@ footer p:before{
 }
 
 footer p.map{
+    /* buttons should light up on hover from their dark shade */
 	background-color: #0096d6;
-/* buttons should light up on hover from their dark shade */
-	background-image:-webkit-linear-gradient(top, #0096d6, #008ac6);
-	background-image:-moz-linear-gradient(top, #0096d6, #008ac6);
-	background-image:linear-gradient(top, #0096d6, #008ac6);
 }
 
 footer p.map:before{
@@ -642,9 +662,6 @@ footer p.map:before{
 footer p.services{
 	background-color: #00b274;
 
-	background-image:-webkit-linear-gradient(top, #00b274, #00a46b);
-	background-image:-moz-linear-gradient(top, #00b274, #00a46b);
-	background-image:linear-gradient(top, #00b274, #00a46b);
 }
 
 footer p.services:before{
@@ -653,10 +670,6 @@ footer p.services:before{
 
 footer p.contact{
 	background-color: #d75ba2;
-
-	background-image:-webkit-linear-gradient(top, #d75ba2, #c75496);
-	background-image:-moz-linear-gradient(top, #d75ba2, #c75496);
-	background-image:linear-gradient(top, #d75ba2, #c75496);
 }
 
 footer p.contact:before{
@@ -666,9 +679,6 @@ footer p.contact:before{
 footer p.clients{
 	background-color: #e9ac40;
 
-	background-image:-webkit-linear-gradient(top, #e9ac40, #d89f3b);
-	background-image:-moz-linear-gradient(top, #e9ac40, #d89f3b);
-	background-image:linear-gradient(top, #e9ac40, #d89f3b);
 }
 
 footer p.clients:before{
